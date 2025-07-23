@@ -158,6 +158,7 @@ C:\Users\A0849274\sources\Monit0\tests\Monit0.Tests.Unit\obj\Debug\net9.0\Monit0
 C:\Users\A0849274\sources\Monit0\tests\Monit0.Tests.Unit\obj\Debug\net9.0\Monit0.Tests.Unit.AssemblyInfoInputs.cache
 C:\Users\A0849274\sources\Monit0\tests\Monit0.Tests.Unit\obj\Debug\net9.0\Monit0.Tests.Unit.AssemblyInfo.cs
 C:\Users\A0849274\sources\Monit0\tests\Monit0.Tests.Unit\obj\Debug\net9.0\Monit0.Tests.Unit.csproj.CoreCompileInputs.cache
+C:\Users\A0849274\sources\Monit0\tests\Monit0.Tests.Unit\obj\Debug\net9.0\Monit0.Tests.Unit.sourcelink.json
 C:\Users\A0849274\sources\Monit0\tests\Monit0.Tests.Unit\obj\Debug\net9.0\Monit0.T.330C0ED5.Up2Date
 C:\Users\A0849274\sources\Monit0\tests\Monit0.Tests.Unit\obj\Debug\net9.0\Monit0.Tests.Unit.dll
 C:\Users\A0849274\sources\Monit0\tests\Monit0.Tests.Unit\obj\Debug\net9.0\refint\Monit0.Tests.Unit.dll

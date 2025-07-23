@@ -1,4 +1,4 @@
-Ôªøusing Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
@@ -9,29 +9,42 @@ namespace Monit0.Console
 {
     class Program
     {
-        public static async Task Main(string[] args)
+        static async Task Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
 
             try
             {
                 using var scope = host.Services.CreateScope();
-                var connectionTestService = scope.ServiceProvider.GetRequiredService<IConnectionTestService>();
-                System.Console.WriteLine("üîç Testing database connections...\n");
-
-                // Tester toutes les connexions
-                var results = await connectionTestService.TestAllConnectionsAsync();
-
-                System.Console.WriteLine("\nüìã Summary:");
-                var successful = results.Count(r => r.Value);
-                var failed = results.Count(r => !r.Value);
-
-                System.Console.WriteLine($"‚úÖ Successful: {successful}");
-                System.Console.WriteLine($"‚ùå Failed: {failed}");
+                System.Console.WriteLine("?? Starting Monit0 with Real WorldCheck Data...");
+                var worldCheckService = scope.ServiceProvider.GetRequiredService<IWorldCheckService>();
+                var data = await worldCheckService.GetWorldCheckMonitoringAsync();
+                if (data != null)
+                {
+                    System.Console.WriteLine($"? WorldCheck Data Retrieved:");
+                    System.Console.WriteLine($"   ?? Total Records: {data.TotalCount:N0}");
+                    System.Console.WriteLine($"   ? Errors: {data.ErrorCount:N0}");
+                    System.Console.WriteLine($"   ?? Error Rate: {data.ErrorPercentage:F1}%");
+                    System.Console.WriteLine($"   ?? Last Update: {data.LastDate:dd/MM/yyyy HH:mm}");
+                    System.Console.WriteLine($"   ?? Status: {data.GlobalStatus}");
+                    // GÈnÈrer et sauvegarder le rapport HTML
+                    await worldCheckService.SaveReportAsync(data, "./reports");
+                    System.Console.WriteLine("? Professional HTML Report saved in ./reports/");
+                    // Afficher le chemin du fichier gÈnÈrÈ
+                    var fileName = $"WorldCheck_Report_{DateTime.Now:yyyyMMdd_HHmmss}.html";
+                    System.Console.WriteLine($"?? Report File: {fileName}");
+                }
+                else
+                {
+                    System.Console.WriteLine("?? No WorldCheck data found");
+                }
+                System.Console.WriteLine();
+                System.Console.WriteLine("?? Monit0 execution completed successfully!");
             }
             catch (Exception ex)
             {
-                System.Console.WriteLine($"üí• Application error: {ex.Message}");
+                System.Console.WriteLine($"? Application Error: {ex.Message}");
+                System.Console.WriteLine($"?? Details: {ex}");
                 Environment.Exit(1);
             }
         }
@@ -40,11 +53,28 @@ namespace Monit0.Console
             Host.CreateDefaultBuilder(args)
                 .ConfigureAppConfiguration((context, config) =>
                 {
-                    config.AddJsonFile("appsettings.json", optional: false);
+                    config.AddJsonFile("appsettings.json", optional: true);
+                    config.AddEnvironmentVariables();
+                    // Support pour les arguments en ligne de commande (futur)
+                    if (args?.Length > 0)
+                    {
+                        config.AddCommandLine(args);
+                    }
                 })
-                .ConfigureServices((context, services) =>
+                .ConfigureLogging(logging =>
                 {
-                    services.AddScoped<IConnectionTestService, ConnectionTestService>();
-                });
+                    // Configuration du logging
+                    logging.ClearProviders();
+                    logging.AddConsole();
+                    logging.SetMinimumLevel(LogLevel.Information);
+                })
+            .ConfigureServices((context, services) =>
+            {
+                // Services de donnÈes
+                services.AddScoped<IDataService, DataService>();
+                // Services de templates et monitoring
+                services.AddScoped<IHtmlTemplateService, HtmlTemplateService>();
+                services.AddScoped<IWorldCheckService, WorldCheckService>();
+            });
     }
 }

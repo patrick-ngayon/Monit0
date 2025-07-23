@@ -5,6 +5,7 @@ C:\Users\A0849274\sources\Monit0\src\Monit0.Core\obj\Debug\net9.0\Monit0.Core.Ge
 C:\Users\A0849274\sources\Monit0\src\Monit0.Core\obj\Debug\net9.0\Monit0.Core.AssemblyInfoInputs.cache
 C:\Users\A0849274\sources\Monit0\src\Monit0.Core\obj\Debug\net9.0\Monit0.Core.AssemblyInfo.cs
 C:\Users\A0849274\sources\Monit0\src\Monit0.Core\obj\Debug\net9.0\Monit0.Core.csproj.CoreCompileInputs.cache
+C:\Users\A0849274\sources\Monit0\src\Monit0.Core\obj\Debug\net9.0\Monit0.Core.sourcelink.json
 C:\Users\A0849274\sources\Monit0\src\Monit0.Core\obj\Debug\net9.0\Monit0.Core.dll
 C:\Users\A0849274\sources\Monit0\src\Monit0.Core\obj\Debug\net9.0\refint\Monit0.Core.dll
 C:\Users\A0849274\sources\Monit0\src\Monit0.Core\obj\Debug\net9.0\Monit0.Core.pdb
