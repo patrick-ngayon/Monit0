@@ -1,0 +1,5 @@
+C:\Users\A0849274\sources\Monit0\src\Monit0.Console\obj\Debug\net7.0\Monit0.Console.csproj.AssemblyReference.cache
+C:\Users\A0849274\sources\Monit0\src\Monit0.Console\obj\Debug\net7.0\Monit0.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A0849274\sources\Monit0\src\Monit0.Console\obj\Debug\net7.0\Monit0.Console.AssemblyInfoInputs.cache
+C:\Users\A0849274\sources\Monit0\src\Monit0.Console\obj\Debug\net7.0\Monit0.Console.AssemblyInfo.cs
+C:\Users\A0849274\sources\Monit0\src\Monit0.Console\obj\Debug\net7.0\Monit0.Console.csproj.CoreCompileInputs.cache
