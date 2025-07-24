@@ -30,15 +30,9 @@ namespace Monit0.Infrastructure.Services
 
             var htmlBuilder = new StringBuilder();
 
-            // Header HTML commun
-
             htmlBuilder.Append(GetHtmlHeader());
 
-            // Contenu dynamique
-
             htmlBuilder.Append("<body>");
-
-            htmlBuilder.Append(GetReportHeader());
 
             foreach (var data in monitoringData)
 
@@ -47,8 +41,6 @@ namespace Monit0.Infrastructure.Services
                 htmlBuilder.Append(await GenerateSection(data));
 
             }
-
-            htmlBuilder.Append(GetReportFooter());
 
             htmlBuilder.Append("</body></html>");
 
@@ -66,255 +58,86 @@ namespace Monit0.Infrastructure.Services
 <head>
 <meta charset='UTF-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>Monit0 - Rapport de Monitoring</title>
+<title>MONITORING WORDL CHECK</title>
 <style>
 
-        :root {
+        body { 
 
-            --color-success: #28a745;
+            font-family: Arial, sans-serif; 
 
-            --color-error: #dc3545;
+            margin: 20px; 
 
-            --color-warning: #ffc107;
+            display: flex; 
 
-            --color-info: #17a2b8;
-
-        }
-
-        body {
-
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-            margin: 0;
-
-            padding: 20px;
-
-            background-color: #f8f9fa;
+            justify-content: center; 
 
         }
 
-        .container {
+        table { 
 
-            max-width: 1200px;
+            border-collapse: collapse; 
 
-            margin: 0 auto;
+            width: 800px; 
 
-            background: white;
-
-            border-radius: 8px;
-
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-
-            overflow: hidden;
+            font-size: 14px; 
 
         }
 
-        .header {
+        th, td { 
 
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: 1px solid #999; 
 
-            color: white;
+            padding: 8px 12px; 
 
-            padding: 30px;
-
-            text-align: center;
+            text-align: left; 
 
         }
 
-        .header h1 {
+        th { 
 
-            margin: 0;
+            background-color: #f0f0f0; 
 
-            font-size: 2.5rem;
-
-            font-weight: 300;
+            width: 200px; 
 
         }
 
-        .header .timestamp {
+        .label-cell { 
 
-            margin-top: 10px;
+            background-color: #e0e0e0; 
 
-            opacity: 0.9;
-
-            font-size: 0.9rem;
+            font-weight: normal; 
 
         }
 
-        .monitoring-section {
+        .status-ko { 
 
-            padding: 30px;
+            color: #c00; 
 
-            border-bottom: 1px solid #eee;
+            font-weight: bold; 
 
-        }
-
-        .monitoring-section:last-child {
-
-            border-bottom: none;
+            text-align: center; 
 
         }
 
-        .section-header {
+        .status-ok { 
 
-            display: flex;
+            color: #080; 
 
-            justify-content: space-between;
+            font-weight: bold; 
 
-            align-items: center;
-
-            margin-bottom: 20px;
+            text-align: center; 
 
         }
 
-        .section-title {
+        .date { 
 
-            font-size: 1.5rem;
+            color: #555; 
 
-            font-weight: 600;
-
-            color: #333;
-
-        }
-
-        .status-badge {
-
-            padding: 8px 16px;
-
-            border-radius: 20px;
-
-            font-weight: bold;
-
-            font-size: 0.9rem;
-
-            text-transform: uppercase;
-
-        }
-
-        .status-ok {
-
-            background-color: var(--color-success);
-
-            color: white;
-
-        }
-
-        .status-ko {
-
-            background-color: var(--color-error);
-
-            color: white;
-
-        }
-
-        .metrics-grid {
-
-            display: grid;
-
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
-            gap: 20px;
-
-            margin-top: 20px;
-
-        }
-
-        .metric-card {
-
-            background: #f8f9fa;
-
-            border: 1px solid #dee2e6;
-
-            border-radius: 8px;
-
-            padding: 20px;
-
-            text-align: center;
-
-        }
-
-        .metric-value {
-
-            font-size: 2rem;
-
-            font-weight: bold;
-
-            color: #495057;
-
-            margin-bottom: 5px;
-
-        }
-
-        .metric-label {
-
-            color: #6c757d;
-
-            font-size: 0.9rem;
-
-            text-transform: uppercase;
-
-            letter-spacing: 0.5px;
-
-        }
-
-        .footer {
-
-            background-color: #f8f9fa;
-
-            padding: 20px;
-
-            text-align: center;
-
-            color: #6c757d;
-
-            font-size: 0.9rem;
-
-        }
-
-        @media (max-width: 768px) {
-
-            .container {
-
-                margin: 10px;
-
-                border-radius: 0;
-
-            }
-
-            .header {
-
-                padding: 20px;
-
-            }
-
-            .header h1 {
-
-                font-size: 2rem;
-
-            }
-
-            .monitoring-section {
-
-                padding: 20px;
-
-            }
+            text-align: center; 
 
         }
 </style>
 </head>";
-
-        }
-
-        private string GetReportHeader()
-
-        {
-
-            return $@"
-<div class='container'>
-<div class='header'>
-<h1>?? Monit0 - Rapport de Monitoring</h1>
-<div class='timestamp'>Généré le {DateTime.Now:dddd dd MMMM yyyy à HH:mm}</div>
-</div>";
 
         }
 
@@ -328,7 +151,7 @@ namespace Monit0.Infrastructure.Services
 
                 WorldCheckMonitoring worldCheck => GenerateWorldCheckSection(worldCheck),
 
-                _ => $"<div class='monitoring-section'><p>Type de données non supporté: {data.GetType().Name}</p></div>"
+                _ => $"<div>Type de données non supporté: {data.GetType().Name}</div>"
 
             };
 
@@ -338,50 +161,31 @@ namespace Monit0.Infrastructure.Services
 
         {
 
-            var statusClass = data.GlobalStatus.ToLower() == "ok" ? "status-ok" : "status-ko";
+            string statut = data.ErrorCount > 0 ? "KO" : "OK";
 
-            var lastDateFormatted = data.LastDate == DateTime.MinValue ? "N/A" : data.LastDate.ToString("dd/MM/yyyy HH:mm");
+            string statutClass = statut == "KO" ? "status-ko" : "status-ok";
 
-            return $@"
-<div class='monitoring-section'>
-<div class='section-header'>
-<h2 class='section-title'>?? WorldCheck Monitoring</h2>
-<span class='status-badge {statusClass}'>{data.GlobalStatus}</span>
-</div>
-<div class='metrics-grid'>
-<div class='metric-card'>
-<div class='metric-value'>{data.TotalCount:N0}</div>
-<div class='metric-label'>Lignes traitées</div>
-</div>
-<div class='metric-card'>
-<div class='metric-value'>{data.ErrorCount:N0}</div>
-<div class='metric-label'>Erreurs détectées</div>
-</div>
-<div class='metric-card'>
-<div class='metric-value'>{Math.Round(data.ErrorPercentage, 1)}%</div>
-<div class='metric-label'>Taux d'erreur</div>
-</div>
-<div class='metric-card'>
-<div class='metric-value' style='font-size: 1.2rem;'>{lastDateFormatted}</div>
-<div class='metric-label'>Dernière mise à jour</div>
-</div>
-</div>
-</div>";
-
-        }
-
-        private string GetReportFooter()
-
-        {
+            string dateFormatted = data.LastDate == DateTime.MinValue ? "-" : data.LastDate.ToString("dd/MM/yyyy HH:mm");
 
             return $@"
-<div class='footer'>
-<p>Rapport généré automatiquement par <strong>Monit0</strong> • {DateTime.Now:yyyy}</p>
-</div>
-</div>";
+<table>
+<!-- Ligne 1 : fusion des cellules A1 et B1 -->
+<tr>
+<td colspan='2'><strong>MONITORING WORDL CHECK</strong></td>
+<td class='{statutClass}'>{statut}</td>
+<td class='date'>{dateFormatted}</td>
+</tr>
+<!-- Ligne vide -->
+<tr><td></td><td></td><td></td><td></td></tr>
+<!-- Partie indicateurs (4 colonnes comme Excel) -->
+<tr><td></td><td>Nombre de lignes traitées</td><td>{data.TotalCount}</td><td></td></tr>
+<tr><td></td><td>Nombre d'erreurs</td><td>{data.ErrorCount}</td><td></td></tr>
+<tr><td></td><td>Pourcentage erreurs</td><td>{Math.Round(data.ErrorPercentage)}%</td><td></td></tr>
+</table>";
 
         }
 
     }
 
 }
+ 
