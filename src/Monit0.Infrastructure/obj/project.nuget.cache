@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iAz8Bh4iJfo=",
+  "dgSpecHash": "WloRCvaYo94=",
   "success": true,
-  "projectFilePath": "C:\\Users\\A0849274\\sources\\Monit0\\src\\Monit0.Infrastructure\\Monit0.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\A0849274\\Monit0\\src\\Monit0.Infrastructure\\Monit0.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\A0849274\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\A0849274\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

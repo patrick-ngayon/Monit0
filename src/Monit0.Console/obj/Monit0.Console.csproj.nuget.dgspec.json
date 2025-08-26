@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\A0849274\\sources\\Monit0\\src\\Monit0.Console\\Monit0.Console.csproj": {}
+    "C:\\Users\\A0849274\\Monit0\\src\\Monit0.Console\\Monit0.Console.csproj": {}
   },
   "projects": {
-    "C:\\Users\\A0849274\\sources\\Monit0\\src\\Monit0.Console\\Monit0.Console.csproj": {
+    "C:\\Users\\A0849274\\Monit0\\src\\Monit0.Console\\Monit0.Console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\A0849274\\sources\\Monit0\\src\\Monit0.Console\\Monit0.Console.csproj",
+        "projectUniqueName": "C:\\Users\\A0849274\\Monit0\\src\\Monit0.Console\\Monit0.Console.csproj",
         "projectName": "Monit0.Console",
-        "projectPath": "C:\\Users\\A0849274\\sources\\Monit0\\src\\Monit0.Console\\Monit0.Console.csproj",
+        "projectPath": "C:\\Users\\A0849274\\Monit0\\src\\Monit0.Console\\Monit0.Console.csproj",
         "packagesPath": "C:\\Users\\A0849274\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\A0849274\\sources\\Monit0\\src\\Monit0.Console\\obj\\",
+        "outputPath": "C:\\Users\\A0849274\\Monit0\\src\\Monit0.Console\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\A0849274\\sources\\Monit0\\src\\Monit0.Core\\Monit0.Core.csproj": {
-                "projectPath": "C:\\Users\\A0849274\\sources\\Monit0\\src\\Monit0.Core\\Monit0.Core.csproj"
+              "C:\\Users\\A0849274\\Monit0\\src\\Monit0.Core\\Monit0.Core.csproj": {
+                "projectPath": "C:\\Users\\A0849274\\Monit0\\src\\Monit0.Core\\Monit0.Core.csproj"
               },
-              "C:\\Users\\A0849274\\sources\\Monit0\\src\\Monit0.Infrastructure\\Monit0.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\A0849274\\sources\\Monit0\\src\\Monit0.Infrastructure\\Monit0.Infrastructure.csproj"
+              "C:\\Users\\A0849274\\Monit0\\src\\Monit0.Infrastructure\\Monit0.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\A0849274\\Monit0\\src\\Monit0.Infrastructure\\Monit0.Infrastructure.csproj"
               }
             }
           }
@@ -86,18 +86,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\A0849274\\sources\\Monit0\\src\\Monit0.Core\\Monit0.Core.csproj": {
+    "C:\\Users\\A0849274\\Monit0\\src\\Monit0.Core\\Monit0.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\A0849274\\sources\\Monit0\\src\\Monit0.Core\\Monit0.Core.csproj",
+        "projectUniqueName": "C:\\Users\\A0849274\\Monit0\\src\\Monit0.Core\\Monit0.Core.csproj",
         "projectName": "Monit0.Core",
-        "projectPath": "C:\\Users\\A0849274\\sources\\Monit0\\src\\Monit0.Core\\Monit0.Core.csproj",
+        "projectPath": "C:\\Users\\A0849274\\Monit0\\src\\Monit0.Core\\Monit0.Core.csproj",
         "packagesPath": "C:\\Users\\A0849274\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\A0849274\\sources\\Monit0\\src\\Monit0.Core\\obj\\",
+        "outputPath": "C:\\Users\\A0849274\\Monit0\\src\\Monit0.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -151,18 +151,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\A0849274\\sources\\Monit0\\src\\Monit0.Infrastructure\\Monit0.Infrastructure.csproj": {
+    "C:\\Users\\A0849274\\Monit0\\src\\Monit0.Infrastructure\\Monit0.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\A0849274\\sources\\Monit0\\src\\Monit0.Infrastructure\\Monit0.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\A0849274\\Monit0\\src\\Monit0.Infrastructure\\Monit0.Infrastructure.csproj",
         "projectName": "Monit0.Infrastructure",
-        "projectPath": "C:\\Users\\A0849274\\sources\\Monit0\\src\\Monit0.Infrastructure\\Monit0.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\A0849274\\Monit0\\src\\Monit0.Infrastructure\\Monit0.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\A0849274\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\A0849274\\sources\\Monit0\\src\\Monit0.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\A0849274\\Monit0\\src\\Monit0.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -183,8 +183,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\A0849274\\sources\\Monit0\\src\\Monit0.Core\\Monit0.Core.csproj": {
-                "projectPath": "C:\\Users\\A0849274\\sources\\Monit0\\src\\Monit0.Core\\Monit0.Core.csproj"
+              "C:\\Users\\A0849274\\Monit0\\src\\Monit0.Core\\Monit0.Core.csproj": {
+                "projectPath": "C:\\Users\\A0849274\\Monit0\\src\\Monit0.Core\\Monit0.Core.csproj"
               }
             }
           }
@@ -242,7 +242,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

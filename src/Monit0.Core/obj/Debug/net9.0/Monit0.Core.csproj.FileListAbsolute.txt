@@ -10,3 +10,15 @@ C:\Users\A0849274\sources\Monit0\src\Monit0.Core\obj\Debug\net9.0\Monit0.Core.dl
 C:\Users\A0849274\sources\Monit0\src\Monit0.Core\obj\Debug\net9.0\refint\Monit0.Core.dll
 C:\Users\A0849274\sources\Monit0\src\Monit0.Core\obj\Debug\net9.0\Monit0.Core.pdb
 C:\Users\A0849274\sources\Monit0\src\Monit0.Core\obj\Debug\net9.0\ref\Monit0.Core.dll
+C:\Users\A0849274\Monit0\src\Monit0.Core\bin\Debug\net9.0\Monit0.Core.deps.json
+C:\Users\A0849274\Monit0\src\Monit0.Core\bin\Debug\net9.0\Monit0.Core.dll
+C:\Users\A0849274\Monit0\src\Monit0.Core\bin\Debug\net9.0\Monit0.Core.pdb
+C:\Users\A0849274\Monit0\src\Monit0.Core\obj\Debug\net9.0\Monit0.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A0849274\Monit0\src\Monit0.Core\obj\Debug\net9.0\Monit0.Core.AssemblyInfoInputs.cache
+C:\Users\A0849274\Monit0\src\Monit0.Core\obj\Debug\net9.0\Monit0.Core.AssemblyInfo.cs
+C:\Users\A0849274\Monit0\src\Monit0.Core\obj\Debug\net9.0\Monit0.Core.csproj.CoreCompileInputs.cache
+C:\Users\A0849274\Monit0\src\Monit0.Core\obj\Debug\net9.0\Monit0.Core.sourcelink.json
+C:\Users\A0849274\Monit0\src\Monit0.Core\obj\Debug\net9.0\Monit0.Core.dll
+C:\Users\A0849274\Monit0\src\Monit0.Core\obj\Debug\net9.0\refint\Monit0.Core.dll
+C:\Users\A0849274\Monit0\src\Monit0.Core\obj\Debug\net9.0\Monit0.Core.pdb
+C:\Users\A0849274\Monit0\src\Monit0.Core\obj\Debug\net9.0\ref\Monit0.Core.dll
