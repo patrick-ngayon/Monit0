@@ -246,4 +246,4 @@ ORDER BY POSITIONS";
             }
         }
     }
-}
+}   

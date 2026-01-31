@@ -8,7 +8,7 @@ namespace Monit0.Core.Models.WorldCheck
 
         public DateTime LastDate { get; set; }
 
-        public int TotalCount { get; set; }
+        public int   TotalCount { get; set; }
 
         public int ErrorCount { get; set; }
 
@@ -16,11 +16,11 @@ namespace Monit0.Core.Models.WorldCheck
 
         public DateTime ExecutionTime { get; set; } = DateTime.Now;
 
-        // Statut global calculé selon la règle métier
+        // Statut global calculï¿½ selon la rï¿½gle mï¿½tier
 
         public string GlobalStatus => ErrorCount > 0 ? "KO" : "OK";
 
-        // Compatibilité avec votre ancien code
+        // Compatibilitï¿½ avec votre ancien code
 
         public DateTime LAST_DATE
 
