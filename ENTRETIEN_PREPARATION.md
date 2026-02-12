@@ -356,6 +356,55 @@ services.AddTransient<IEmailService, EmailService>();   // Nouvelle à chaque fo
 
 ---
 
+## 11. Git
+
+### Q: Quelles sont les commandes Git essentielles ?
+
+**Réponse:**
+
+| Commande | Rôle |
+|----------|------|
+| `git status` | Voir l'état des fichiers (modifiés, ajoutés, etc.) |
+| `git add fichier` | Ajouter un fichier à la zone de staging |
+| `git add .` | Ajouter tous les fichiers (sauf ceux du .gitignore) |
+| `git commit -m "msg"` | Sauvegarder une "photo" du code |
+| `git branch` | Lister les branches |
+| `git checkout -b nom` | Créer une branche et basculer dessus |
+| `git checkout nom` | Basculer sur une branche existante |
+| `git log` | Voir l'historique des commits |
+| `git merge branche` | Fusionner une branche dans la branche actuelle |
+| `git push` | Envoyer les commits vers le serveur distant |
+| `git pull` | Récupérer les modifications du serveur distant |
+
+---
+
+### Q: Qu'est-ce que le .gitignore ?
+
+**Réponse:**
+Fichier qui liste les fichiers/dossiers que Git doit **ignorer** (ne jamais suivre).
+
+**Exemples courants :**
+- `bin/`, `obj/` → fichiers compilés (re-générés par `dotnet build`)
+- `.DS_Store` → fichier système Mac
+- `appsettings.Development.json` → peut contenir des secrets
+- `*.log` → fichiers de logs
+
+---
+
+### Q: Expliquez le workflow Git en équipe
+
+**Réponse:**
+```
+main (production)
+  │
+  ├── feature/login     ← développeur A travaille ici
+  ├── feature/dashboard  ← développeur B travaille ici
+  │
+  └── Quand c'est fini : merge dans main via Pull Request
+```
+
+---
+
 ## Notes personnelles
 
 *(Ajoute ici tes propres notes au fur et à mesure)*

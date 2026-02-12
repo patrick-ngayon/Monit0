@@ -1,3 +1,4 @@
+
 using Microsoft.Extensions.Logging;
 using Monit0.Core.Interfaces;
 using Monit0.Core.Models.WorldCheck;
@@ -22,7 +23,7 @@ namespace Monit0.Infrastructure.Services
 
         public async Task<WorldCheckMonitoring> GetWorldCheckMonitoringAsync()
         {
-            // VOTRE VRAIE REQUÊTE ORACLE
+            // VOTRE VRAIE REQUï¿½TE ORACLE
             const string query = @"
                 SELECT MAX(MAX_DATE_CREATION_JRN) LAST_DATE,
                        SUM(NB) NB_TOTAL,
