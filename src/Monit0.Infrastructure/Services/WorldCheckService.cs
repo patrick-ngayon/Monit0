@@ -13,7 +13,7 @@ namespace Monit0.Infrastructure.Services
         public WorldCheckService(
             IDataService dataService,
             IHtmlTemplateService htmlTemplateService,
-            ILogger<WorldCheckService> logger)
+        ILogger<WorldCheckService> logger)
         {
             _dataService = dataService;
             _htmlTemplateService = htmlTemplateService;
@@ -22,7 +22,7 @@ namespace Monit0.Infrastructure.Services
 
         public async Task<WorldCheckMonitoring> GetWorldCheckMonitoringAsync()
         {
-            // VOTRE VRAIE REQUÊTE ORACLE
+            // VOTRE VRAIE REQUï¿½TE ORACLE
             const string query = @"
                 SELECT MAX(MAX_DATE_CREATION_JRN) LAST_DATE,
                        SUM(NB) NB_TOTAL,

@@ -22,47 +22,47 @@ namespace Monit0.Core.Models.WorldCheck
 
         // Compatibilit� avec votre ancien code
 
-        public DateTime LAST_DATE
+        // public DateTime LAST_DATE
 
-        {
+        // {
 
-            get => LastDate;
+        //     get => LastDate;
 
-            set => LastDate = value;
+        //     set => LastDate = value;
 
-        }
+        // }
 
-        public int NB_TOTAL
+        // public int NB_TOTAL
 
-        {
+        // {
 
-            get => TotalCount;
+        //     get => TotalCount;
 
-            set => TotalCount = value;
+        //     set => TotalCount = value;
 
-        }
+        // }
 
-        public int NB_ERR
+        // public int NB_ERR
 
-        {
+        // {
 
-            get => ErrorCount;
+        //     get => ErrorCount;
 
-            set => ErrorCount = value;
+        //     set => ErrorCount = value;
 
-        }
+        // }
 
-        public decimal PERCENT_ERR
+        // public decimal PERCENT_ERR
 
-        {
+        // {
 
-            get => ErrorPercentage;
+        //     get => ErrorPercentage;
 
-            set => ErrorPercentage = value;
+        //     set => ErrorPercentage = value;
 
-        }
+        // }
 
-        public string StatutGlobal => GlobalStatus;
+        // public string StatutGlobal => GlobalStatus;
 
     }
 

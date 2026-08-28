@@ -41,7 +41,7 @@ namespace Monit0.Infrastructure.Services
         }
 
         public async Task<QueryResult> ExecuteQueryAsync(string databaseName, string query)
-
+         
         {
 
             var stopwatch = Stopwatch.StartNew();
@@ -66,7 +66,7 @@ namespace Monit0.Infrastructure.Services
 
                 using var connection = CreateConnection(dbConfig);
 
-                // Cast vers le type spécifique pour les méthodes async
+                // Cast vers le type spï¿½cifique pour les mï¿½thodes async
 
                 if (connection is SqlConnection sqlConn)
 

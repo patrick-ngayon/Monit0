@@ -62,13 +62,13 @@ namespace Monit0.Console
 
                     System.Console.WriteLine($"   ?? Status: {worldCheckData.GlobalStatus}");
 
-                    // Générer et sauvegarder le rapport HTML
+                    // Gï¿½nï¿½rer et sauvegarder le rapport HTML
 
-                    await worldCheckService.SaveReportAsync(worldCheckData, "./reports");
+                    // await worldCheckService.SaveReportAsync(worldCheckData, "./reports");
 
                     System.Console.WriteLine("?? Professional HTML Report saved in ./reports/");
 
-                    // Afficher le chemin du fichier généré
+                    // Afficher le chemin du fichier gï¿½nï¿½rï¿½
 
                     var worldCheckFileName = $"WorldCheck_Report_{DateTime.Now:yyyyMMdd_HHmmss}.html";
 
@@ -90,7 +90,7 @@ namespace Monit0.Console
 
                 var veosService = scope.ServiceProvider.GetRequiredService<IVeosService>();
 
-                var veosData = await veosService.GetVeosMonitoringAsync();
+                var veosData = await veosService.GetVeosMonitoringAsync(); 
 
                 if (veosData != null)
 
@@ -106,7 +106,7 @@ namespace Monit0.Console
 
                     System.Console.WriteLine($"   ?? Global Status: {veosData.GlobalStatus}");
 
-                    // Détails par entité
+                    // Dï¿½tails par entitï¿½
 
                     System.Console.WriteLine("   ?? Entity Details:");
 
@@ -114,17 +114,17 @@ namespace Monit0.Console
 
                     {
 
-                        System.Console.WriteLine($"      • {item.Libelle}: {item.NbEnregistrements} records, {item.NbErr} errors - Status: {item.Status}");
+                        System.Console.WriteLine($"      ï¿½ {item.Libelle}: {item.NbEnregistrements} records, {item.NbErr} errors - Status: {item.Status}");
 
                     }
 
-                    // Générer et sauvegarder le rapport HTML
+                    // Gï¿½nï¿½rer et sauvegarder le rapport HTML
 
                     await veosService.SaveReportAsync(veosData, "./reports");
 
                     System.Console.WriteLine("?? Professional HTML Report saved in ./reports/");
 
-                    // Afficher le chemin du fichier généré
+                    // Afficher le chemin du fichier gï¿½nï¿½rï¿½
 
                     var veosFileName = $"VEOS_Report_{DateTime.Now:yyyyMMdd_HHmmss}.html";
 
@@ -136,11 +136,11 @@ namespace Monit0.Console
 
                 {
 
-                    System.Console.WriteLine("?? No VEOS data found");
+                    System.Console.WriteLine("?? No VEOS data found"); 
 
                 }
 
-                // 3. Rapport combiné
+                // 3. Rapport combinï¿½
 
                 if (worldCheckData != null || veosData != null)
 
@@ -234,17 +234,17 @@ namespace Monit0.Console
 
                 {
 
-                    // Services de données
+                    // Services de donnï¿½es
 
                     services.AddScoped<IDataService, DataService>();
 
                     // Services de templates et monitoring
 
-                    services.AddScoped<IHtmlTemplateService, HtmlTemplateService>();
+                    // services.AddScoped<IHtmlTemplateService, HtmlTemplateService>();
 
-                    services.AddScoped<IWorldCheckService, WorldCheckService>();
+                    // services.AddScoped<IWorldCheckService, WorldCheckService>();
 
-                    services.AddScoped<IVeosService, VeosService>(); // Ajout du service VEOS
+                    // services.AddScoped<IVeosService, VeosService>(); // Ajout du service VEOS
 
                 });
 

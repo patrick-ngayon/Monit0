@@ -1,0 +1,12 @@
+/Users/ngayon/Desktop/Monit0/src/Monit0.Core/bin/Release/net9.0/Monit0.Core.deps.json
+/Users/ngayon/Desktop/Monit0/src/Monit0.Core/bin/Release/net9.0/Monit0.Core.dll
+/Users/ngayon/Desktop/Monit0/src/Monit0.Core/bin/Release/net9.0/Monit0.Core.pdb
+/Users/ngayon/Desktop/Monit0/src/Monit0.Core/obj/Release/net9.0/Monit0.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ngayon/Desktop/Monit0/src/Monit0.Core/obj/Release/net9.0/Monit0.Core.AssemblyInfoInputs.cache
+/Users/ngayon/Desktop/Monit0/src/Monit0.Core/obj/Release/net9.0/Monit0.Core.AssemblyInfo.cs
+/Users/ngayon/Desktop/Monit0/src/Monit0.Core/obj/Release/net9.0/Monit0.Core.csproj.CoreCompileInputs.cache
+/Users/ngayon/Desktop/Monit0/src/Monit0.Core/obj/Release/net9.0/Monit0.Core.sourcelink.json
+/Users/ngayon/Desktop/Monit0/src/Monit0.Core/obj/Release/net9.0/Monit0.Core.dll
+/Users/ngayon/Desktop/Monit0/src/Monit0.Core/obj/Release/net9.0/refint/Monit0.Core.dll
+/Users/ngayon/Desktop/Monit0/src/Monit0.Core/obj/Release/net9.0/Monit0.Core.pdb
+/Users/ngayon/Desktop/Monit0/src/Monit0.Core/obj/Release/net9.0/ref/Monit0.Core.dll

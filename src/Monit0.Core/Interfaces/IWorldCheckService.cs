@@ -12,7 +12,7 @@ namespace Monit0.Core.Interfaces
     public interface IWorldCheckService
     {
         Task<WorldCheckMonitoring> GetWorldCheckMonitoringAsync();
-        Task<string> GenerateHtmlReportAsync(WorldCheckMonitoring data);
-        Task SaveReportAsync(WorldCheckMonitoring data, string outputPath);
+        // Task<string> GenerateHtmlReportAsync(WorldCheckMonitoring data);
+        // Task SaveReportAsync(WorldCheckMonitoring data, string outputPath);
     }
 }
