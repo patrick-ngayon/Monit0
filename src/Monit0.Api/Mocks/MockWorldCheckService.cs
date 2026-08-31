@@ -16,7 +16,7 @@ namespace Monit0.Api.Mocks
 
                 TotalCount = 10,
 
-                ErrorCount = 0,
+                ErrorCount = 1,
 
                 ErrorPercentage = 10
             };

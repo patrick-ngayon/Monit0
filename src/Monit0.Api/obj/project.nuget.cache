@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ANPYMTH04FE=",
+  "dgSpecHash": "1EKUXRUArEs=",
   "success": true,
-  "projectFilePath": "/Users/ngayon/Desktop/Monit0/src/Monit0.Api/Monit0.Api.csproj",
+  "projectFilePath": "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Api/Monit0.Api.csproj",
   "expectedPackageFiles": [
     "/Users/ngayon/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/ngayon/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",

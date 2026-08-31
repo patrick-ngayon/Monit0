@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BdCfAZeG/MU=",
+  "dgSpecHash": "8XQzbhpMsr0=",
   "success": true,
-  "projectFilePath": "/Users/ngayon/Desktop/Monit0/src/Monit0.Core/Monit0.Core.csproj",
-  "expectedPackageFiles": [
-    "/Users/ngayon/.nuget/packages/microsoft.netcore.app.ref/9.0.19/microsoft.netcore.app.ref.9.0.19.nupkg.sha512",
-    "/Users/ngayon/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.19/microsoft.aspnetcore.app.ref.9.0.19.nupkg.sha512"
-  ],
+  "projectFilePath": "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Core/Monit0.Core.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

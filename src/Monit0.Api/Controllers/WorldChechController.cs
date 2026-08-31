@@ -33,7 +33,7 @@ namespace Monit0.Api.Controllers
                     GlobalStatus = worldcheckData.GlobalStatus, 
                     LastDate = worldcheckData.LastDate
                 }; 
-                return Ok(dto); 
+                return Ok(worldcheckData); 
             }catch(Exception ex)
             {
                 return StatusCode(500, ex.Message); 
@@ -72,14 +72,14 @@ namespace Monit0.Api.Controllers
             try
             {
                 var refreshData =await _worldcheckservice.GetWorldCheckMonitoringAsync();
-                if(refreshData == null) return NotFound(); 
 
                 var dtoRefresh = new WorldCheckDto
                 {
                     GlobalStatus = refreshData.GlobalStatus,
                     LastDate = refreshData.LastDate
                 };
-                    return Ok(dtoRefresh); 
+                    if(refreshData == null) return NotFound(); 
+                    return Ok(refreshData); 
             }
 
             catch (Exception ex)

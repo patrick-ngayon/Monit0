@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xOdyHI6gNFY=",
+  "dgSpecHash": "lwtvU5YC+OY=",
   "success": true,
-  "projectFilePath": "/Users/ngayon/Desktop/Monit0/src/Monit0.Infrastructure/Monit0.Infrastructure.csproj",
+  "projectFilePath": "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Infrastructure/Monit0.Infrastructure.csproj",
   "expectedPackageFiles": [
     "/Users/ngayon/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/ngayon/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",
@@ -69,9 +69,7 @@
     "/Users/ngayon/.nuget/packages/system.text.encodings.web/4.7.2/system.text.encodings.web.4.7.2.nupkg.sha512",
     "/Users/ngayon/.nuget/packages/system.text.json/9.0.19/system.text.json.9.0.19.nupkg.sha512",
     "/Users/ngayon/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "/Users/ngayon/.nuget/packages/system.windows.extensions/6.0.0/system.windows.extensions.6.0.0.nupkg.sha512",
-    "/Users/ngayon/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.19/microsoft.aspnetcore.app.ref.9.0.19.nupkg.sha512",
-    "/Users/ngayon/.nuget/packages/microsoft.netcore.app.ref/9.0.19/microsoft.netcore.app.ref.9.0.19.nupkg.sha512"
+    "/Users/ngayon/.nuget/packages/system.windows.extensions/6.0.0/system.windows.extensions.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

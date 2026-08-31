@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ngayon/Desktop/Monit0/src/Monit0.Console/Monit0.Console.csproj": {}
+    "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Console/Monit0.Console.csproj": {}
   },
   "projects": {
-    "/Users/ngayon/Desktop/Monit0/src/Monit0.Console/Monit0.Console.csproj": {
+    "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Console/Monit0.Console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ngayon/Desktop/Monit0/src/Monit0.Console/Monit0.Console.csproj",
+        "projectUniqueName": "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Console/Monit0.Console.csproj",
         "projectName": "Monit0.Console",
-        "projectPath": "/Users/ngayon/Desktop/Monit0/src/Monit0.Console/Monit0.Console.csproj",
+        "projectPath": "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Console/Monit0.Console.csproj",
         "packagesPath": "/Users/ngayon/.nuget/packages/",
-        "outputPath": "/Users/ngayon/Desktop/Monit0/src/Monit0.Console/obj/",
+        "outputPath": "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Console/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ngayon/.nuget/NuGet/NuGet.Config"
@@ -21,7 +21,7 @@
         ],
         "sources": {
           "/Users/ngayon/.nuget/NuGet/local-packages": {},
-          "/opt/homebrew/Cellar/dotnet/10.0.400/libexec/library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -29,11 +29,11 @@
             "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/ngayon/Desktop/Monit0/src/Monit0.Core/Monit0.Core.csproj": {
-                "projectPath": "/Users/ngayon/Desktop/Monit0/src/Monit0.Core/Monit0.Core.csproj"
+              "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Core/Monit0.Core.csproj": {
+                "projectPath": "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Core/Monit0.Core.csproj"
               },
-              "/Users/ngayon/Desktop/Monit0/src/Monit0.Infrastructure/Monit0.Infrastructure.csproj": {
-                "projectPath": "/Users/ngayon/Desktop/Monit0/src/Monit0.Infrastructure/Monit0.Infrastructure.csproj"
+              "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Infrastructure/Monit0.Infrastructure.csproj": {
+                "projectPath": "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Infrastructure/Monit0.Infrastructure.csproj"
               }
             }
           }
@@ -79,37 +79,23 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.19, 9.0.19]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-arm64",
-              "version": "[9.0.19, 9.0.19]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.19, 9.0.19]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/10.0.400/libexec/sdk/10.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ngayon/Desktop/Monit0/src/Monit0.Core/Monit0.Core.csproj": {
+    "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Core/Monit0.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ngayon/Desktop/Monit0/src/Monit0.Core/Monit0.Core.csproj",
+        "projectUniqueName": "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Core/Monit0.Core.csproj",
         "projectName": "Monit0.Core",
-        "projectPath": "/Users/ngayon/Desktop/Monit0/src/Monit0.Core/Monit0.Core.csproj",
+        "projectPath": "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Core/Monit0.Core.csproj",
         "packagesPath": "/Users/ngayon/.nuget/packages/",
-        "outputPath": "/Users/ngayon/Desktop/Monit0/src/Monit0.Core/obj/",
+        "outputPath": "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ngayon/.nuget/NuGet/NuGet.Config"
@@ -119,7 +105,7 @@
         ],
         "sources": {
           "/Users/ngayon/.nuget/NuGet/local-packages": {},
-          "/opt/homebrew/Cellar/dotnet/10.0.400/libexec/library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -156,33 +142,23 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.19, 9.0.19]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.19, 9.0.19]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/10.0.400/libexec/sdk/10.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ngayon/Desktop/Monit0/src/Monit0.Infrastructure/Monit0.Infrastructure.csproj": {
+    "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Infrastructure/Monit0.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ngayon/Desktop/Monit0/src/Monit0.Infrastructure/Monit0.Infrastructure.csproj",
+        "projectUniqueName": "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Infrastructure/Monit0.Infrastructure.csproj",
         "projectName": "Monit0.Infrastructure",
-        "projectPath": "/Users/ngayon/Desktop/Monit0/src/Monit0.Infrastructure/Monit0.Infrastructure.csproj",
+        "projectPath": "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Infrastructure/Monit0.Infrastructure.csproj",
         "packagesPath": "/Users/ngayon/.nuget/packages/",
-        "outputPath": "/Users/ngayon/Desktop/Monit0/src/Monit0.Infrastructure/obj/",
+        "outputPath": "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ngayon/.nuget/NuGet/NuGet.Config"
@@ -192,7 +168,7 @@
         ],
         "sources": {
           "/Users/ngayon/.nuget/NuGet/local-packages": {},
-          "/opt/homebrew/Cellar/dotnet/10.0.400/libexec/library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -200,8 +176,8 @@
             "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/ngayon/Desktop/Monit0/src/Monit0.Core/Monit0.Core.csproj": {
-                "projectPath": "/Users/ngayon/Desktop/Monit0/src/Monit0.Core/Monit0.Core.csproj"
+              "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Core/Monit0.Core.csproj": {
+                "projectPath": "/Users/ngayon/Desktop/Monit0-propre/src/Monit0.Core/Monit0.Core.csproj"
               }
             }
           }
@@ -259,22 +235,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.19, 9.0.19]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.19, 9.0.19]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/10.0.400/libexec/sdk/10.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

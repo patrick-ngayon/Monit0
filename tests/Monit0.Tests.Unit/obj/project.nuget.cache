@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0lsHaVx7t/U=",
+  "dgSpecHash": "Tv27W2B6BYE=",
   "success": true,
-  "projectFilePath": "/Users/ngayon/Desktop/Monit0/tests/Monit0.Tests.Unit/Monit0.Tests.Unit.csproj",
+  "projectFilePath": "/Users/ngayon/Desktop/Monit0-propre/tests/Monit0.Tests.Unit/Monit0.Tests.Unit.csproj",
   "expectedPackageFiles": [
     "/Users/ngayon/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/ngayon/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",
@@ -84,9 +84,7 @@
     "/Users/ngayon/.nuget/packages/xunit.core/2.9.2/xunit.core.2.9.2.nupkg.sha512",
     "/Users/ngayon/.nuget/packages/xunit.extensibility.core/2.9.2/xunit.extensibility.core.2.9.2.nupkg.sha512",
     "/Users/ngayon/.nuget/packages/xunit.extensibility.execution/2.9.2/xunit.extensibility.execution.2.9.2.nupkg.sha512",
-    "/Users/ngayon/.nuget/packages/xunit.runner.visualstudio/2.8.2/xunit.runner.visualstudio.2.8.2.nupkg.sha512",
-    "/Users/ngayon/.nuget/packages/microsoft.netcore.app.ref/9.0.19/microsoft.netcore.app.ref.9.0.19.nupkg.sha512",
-    "/Users/ngayon/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.19/microsoft.aspnetcore.app.ref.9.0.19.nupkg.sha512"
+    "/Users/ngayon/.nuget/packages/xunit.runner.visualstudio/2.8.2/xunit.runner.visualstudio.2.8.2.nupkg.sha512"
   ],
   "logs": []
 }
