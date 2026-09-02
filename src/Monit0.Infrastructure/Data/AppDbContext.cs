@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+ using Microsoft.EntityFrameworkCore;
 using Monit0.Core.Entities;
 
 namespace Monit0.Infrastructure.Data
@@ -12,5 +12,5 @@ namespace Monit0.Infrastructure.Data
         public DbSet<Utilisateur> Utilisateurs{get; set;}
         public DbSet<Monitoring> Monitorings{get; set;}
         public DbSet<Application> Applications { get; set;} 
-    }
+    } 
 }

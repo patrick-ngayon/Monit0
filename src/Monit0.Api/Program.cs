@@ -1,7 +1,9 @@
 using Monit0.Core.Interfaces;
-// using Monit0.Core.Models;
 using Monit0.Infrastructure.Services;
 using Monit0.Api.Mocks;
+using Monit0.Infrastructure.Data; 
+using Microsoft.EntityFrameworkCore; 
+using Monit0.Infrastructure.Data;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,7 +15,10 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<IWorldCheckService, MockWorldCheckService>();
 // builder.Services.AddScoped<IDataService, DataService>();
 // builder.Services.AddScoped<IHtmlTemplateService, HtmlTemplateService>();
-
+// EF Core SQLite
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite(
+        builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
