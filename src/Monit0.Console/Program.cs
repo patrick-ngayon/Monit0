@@ -202,6 +202,8 @@ namespace Monit0.Console
 
                     config.AddJsonFile("appsettings.json", optional: true);
 
+                    config.AddUserSecrets<Program>(optional: true);
+
                     config.AddEnvironmentVariables();
 
                     // Support pour les arguments en ligne de commande (futur)
